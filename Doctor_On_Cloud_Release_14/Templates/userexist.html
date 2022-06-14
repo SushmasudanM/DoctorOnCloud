@@ -1,0 +1,38 @@
+{% extends "mytemplate.html" %}
+
+{% block bodycontent %}
+<!--<style>
+body  {
+  background-color:lightblue;
+}
+</style>
+-->
+<body background="static/Images/wall.webp" height="2000" width="1000";/>
+
+
+<h2>  New User? Register Here </h2>
+<form action="/register" method="post">
+        <fieldset>
+        <p>
+            <label for="user" >UserName:</label>
+            <input type="text" id="user" name="uname" align="left" required/>
+        </p>
+        <p>
+            <label for="pd">Password:</label>
+            <input type="password" id="pd" name="password1" align="left" required>
+        </p>
+        <p>
+            <label for="repwd">Re Enter Password:</label>
+            <input type="password" id="repwd" name="password2" align="left" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"  align="left" required>
+        </p>
+        <p>
+            <input type="submit" value="Click Here To Register">
+        </p>
+        </fieldset>
+</form>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "mytemplate.html" %}
+{% block bodycontent %}
+<!--<style>
+body  {
+  background-color: lightblue;
+}
+</style>
+-->
+<body background="static/Images/wall.webp" height="2000" width="1000";/>
+
+
+<h2>Login Here</h2>
+
+<form action="/validate" method="post">
+        <fieldset>
+        <p>
+            <label for="un" >UserName:</label>
+            <input type="text" id="un" name="uname" align="left" required/>
+        </p>
+        <p>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password" align="left" required>
+        </p>
+            <p>
+                <input type="submit" value="Click Here To Login">
+            </p>
+        </fieldset>
+</form>
+
+<br>
+<br>
+<a href="/newuser">  New User? Register Here </a>
+
+{% endblock %}

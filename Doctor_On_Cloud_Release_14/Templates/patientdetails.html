@@ -1,0 +1,34 @@
+{% extends mytemplate.html %}
+
+{% block bodycontent %}
+
+<body background="static/Images/wall.webp" height="2000" width="1000";/>
+
+<h2> Patients List </h2>
+<br>
+<form id="form" action="/newpatient" method="post">
+    <table border="1">
+        <tr>
+            <th> <font color="#FFFFFF">PATIENT NAME</font></th>
+            <th> <font color="#FFFFFF">PATIENT CONTACT</font></th>
+            <th> <font color="#FFFFFF">BP</font></th>
+            <th> <font color="#FFFFFF">SUGAR</font></th>
+            <th> <font color="#FFFFFF">FEVER</font></th>
+            <th> <font color="#FFFFFF">COLD</font></th>
+            <th> <font color="#FFFFFF">REMARKS</font></th>
+        </tr>
+        {% for each_record in my_data: %}
+        <tr>
+            <td><font color="FFFFFF"> {{ each_record[0] }} </font></td>
+            <td><font color="FFFFFF"> {{ each_record[1] }} </font></td>
+            <td><font color="FFFFFF"> {{ each_record[2] }} </font></td>
+            <td><font color="FFFFFF"> {{ each_record[3] }} </font></td>
+            <td><font color="FFFFFF"> {{ each_record[4] }} </font></td>
+            <td><font color="FFFFFF"> {{ each_record[5] }} </font></td>
+            <td><font color="FFFFFF"> {{ each_record[6] }} </font></td>
+        </tr>
+        {% endfor %}
+    </table>
+</form>
+
+{% endblock %}

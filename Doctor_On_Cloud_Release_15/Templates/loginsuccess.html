@@ -1,0 +1,29 @@
+{% extends "mytemplate.html" %}
+{% block bodycontent %}
+
+<body background="static/Images/wall.webp" height="2000" width="1000";/>
+
+<center>
+<h2>Login Here</h2>
+
+<form action="/validate" method="post">
+        <fieldset>
+        <p>
+            <label for="un" >USERNAME:</label>
+            <input type="text" id="un" name="uname" align="left" required/>
+        </p>
+        <p>
+            <label for="pwd">PASSWORD:</label>
+            <input type="password" id="pwd" name="password" align="left" required>
+        </p>
+            <p>
+                <input type="submit" value="Click Here To Login">
+            </p>
+        </fieldset>
+</form>
+</center>
+<br>
+<br>
+<a href="/newuser">  New User? Register Here </a>
+
+{% endblock %}

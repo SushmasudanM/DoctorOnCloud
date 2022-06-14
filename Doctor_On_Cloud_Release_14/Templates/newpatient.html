@@ -1,0 +1,46 @@
+{% extends "mytemplate.html" %}
+
+{% block bodycontent %}
+
+<body background="static/Images/wall.webp" height="2000" width="1000";/>
+
+<h2>  Add New Patient </h2>
+<form action="/newpatient" method="post">
+        <fieldset>
+        <p>
+            <label for="pname" >Patient Name</label>
+            <input type="text" id="pname" name="pname" align="left" required/>
+        </p>
+        <p>
+            <label for="pcontact">Patient Contact</label>
+            <input type="text" id="pcontact" name="pcontact" align="left" required>
+        </p>
+        <p>
+            <label for="pdtype-1">BP</label>
+            <input type="text" id="pdtype-1" name="pdtype-1" align="left" required>
+        </p>
+        <p>
+            <label for="pdtype-2">Sugar</label>
+            <input type="text" id="pdtype-2" name="pdtype-2" align="left" required>
+        </p>
+         <p>
+            <label for="pdtype-3">Fever</label>
+            <input type="text" id="pdtype-3" name="pdtype-3" align="left" required>
+        </p>
+         <p>
+            <label for="pdtype-4">Cold</label>
+            <input type="text" id="pdtype-4" name="pdtype-4" align="left" required>
+        </p>
+         <p>
+            <label for="premarks">Remarks</label>
+            <input type="text" id="premarks" name="premarks" align="left" required>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+        </fieldset>
+</form>
+<br>
+<br>
+
+{% endblock %}

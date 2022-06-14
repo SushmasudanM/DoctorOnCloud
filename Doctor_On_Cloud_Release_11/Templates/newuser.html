@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor_App.com</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/Style.css')}}">
+</head>
+<style>
+body  {
+  background-image: url("paper.gif");
+  background-color: #92a8d1;
+}
+</style>
+<body>
+<!-- Navbar items -->
+    <div id="navlist">
+       <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/login">Login</a>
+        <div class="navlist-right">
+        <a href="/Contact">Contact Us</a>
+        </div>
+    </div>
+<br>
+
+<center><h1 style="font-family:monospace font-size:40;"> <img src="static/Images/icon.png" height="30" width="30" align="center"/> Doctor On Cloud </h1></center>
+
+
+<br>
+<!--
+<nav><center>
+    🏠 <a href="/"> Home </a>
+   = <a href="/about"> About </a>
+   🔓 <a href="/login"> Login </a>
+</center></nav>
+-->
+
+<h2>  New User? Register Here </h2>
+<form action="/register" method="post">
+        <fieldset>
+        <p>
+            <label for="user" >UserName:</label>
+            <input type="text" id="user" name="uname" align="left" required/>
+        </p>
+        <p>
+            <label for="pd">Password:</label>
+            <input type="password" id="pd" name="password" align="left" required>
+        </p>
+        <p>
+            <label for="repwd">Re Enter Password:</label>
+            <input type="password" id="repwd" align="left" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" align="left" required>
+        </p>
+        <p>
+            <input type="submit" value="Click Here To Register">
+        </p>
+        </fieldset>
+</form>
+
+
+<!--<form action="/register" method="post">
+
+    UserName:<input type="text" name="uname" size="25"/>
+    <br>
+    <br>
+
+    Password:<input type="password" name="pw1" size="25">
+    <br>
+    <br>
+
+    Re Enter Password: <input type="password" name="pw2" size="25">
+    <br>
+    <br>
+
+    Email:<input type="email" name="email" size="25">
+    <br>
+    <br>
+    <input type="submit" value="Click Here To Register">
+
+</form>-->
+
+</body>
+<br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section class="footer">
+    <p class="copyright">
+        @ copyright Doctor On Cloud. <br>
+        All rights reserved
+    </p>
+</section>
+</html>
